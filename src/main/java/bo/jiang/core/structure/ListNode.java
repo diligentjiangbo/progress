@@ -21,6 +21,11 @@ public class ListNode {
     return this.next;
   }
 
+  /**
+   * 反转链表
+   * @param node
+   * @return
+   */
   public static ListNode reverseListNode(ListNode node) {
     if (node == null) {
       return null;
@@ -36,6 +41,11 @@ public class ListNode {
     return pre;
   }
 
+  /**
+   * 创建指定大小的链表
+   * @param size
+   * @return
+   */
   public static ListNode createList(int size) {
     if (size <= 0) {
       return null;
@@ -50,6 +60,10 @@ public class ListNode {
     return header;
   }
 
+  /**
+   * 打印链表的值
+   * @param node
+   */
   public static void show(ListNode node) {
     StringBuilder sb = new StringBuilder("{");
     boolean flag = true;
