@@ -34,20 +34,20 @@ public class Task implements Runnable {
     try {
       pw = getOutputStream();
       br = getInputStream();
-      OUTTER:while (true) {
+
         String str = null;
         while ((str = br.readLine()) != null) {
           logger.info("收到消息:{}", str);
           if ("bye".equals(str)) {
             logger.info("断开连接");
-            break OUTTER;
+            break ;
           }
           String str2 = str.toUpperCase();
           pw.println(str2);
           pw.flush();
           logger.info("返回消息:{}", str2);
         }
-      }
+
     } catch (IOException e) {
       logger.error("异常", e);
     } finally {
