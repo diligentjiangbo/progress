@@ -8,7 +8,7 @@ import java.net.Socket;
  */
 public class Client {
   public static void main(String[] args) throws IOException {
-    Socket socket = new Socket("localhost", 10001);
+    Socket socket = new Socket("192.168.228.131", 10001);
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     OutputStream outputStream = socket.getOutputStream();
     InputStream inputStream = socket.getInputStream();

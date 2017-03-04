@@ -15,6 +15,8 @@ import java.util.Set;
 /**
  * @author shumpert.jiang
  * @date 2017/1/4 0004 20:07
+ *
+ * 初步猜想同时注册读写事件会导致
  */
 public class NoBlockServerDemo {
   private static Logger logger = LogManager.getLogger(NoBlockServerDemo.class);
